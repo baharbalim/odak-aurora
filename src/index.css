@@ -1,0 +1,66 @@
+@import url("https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap");
+@import "tailwindcss";
+
+@theme {
+  --font-display: "Space Grotesk", ui-sans-serif, system-ui, sans-serif;
+  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
+  --font-mono: "JetBrains Mono", ui-monospace, monospace;
+
+  --color-night-950: #0b0f19;
+  --color-night-900: #0f1524;
+  --color-surface: #131a2b;
+  --color-surface-raised: #182036;
+
+  --color-mist-100: #f3f1ff;
+  --color-mist-300: #c4c6de;
+  --color-mist-400: #9a9dbd;
+  --color-mist-500: #8b90ac;
+  --color-mist-700: #565b78;
+
+  --color-focus-400: #ff9d73;
+  --color-focus-500: #ff8a5b;
+  --color-focus-600: #f2703a;
+
+  --color-short-400: #7ff0dd;
+  --color-short-500: #5eead4;
+  --color-short-600: #38c9b4;
+
+  --color-long-400: #b8a5fb;
+  --color-long-500: #a78bfa;
+  --color-long-600: #8a6af0;
+
+  --shadow-glass: 0 1px 1px rgba(255, 255, 255, 0.06) inset, 0 20px 50px -20px rgba(0, 0, 0, 0.6);
+}
+
+@layer base {
+  html {
+    font-family: var(--font-sans);
+  }
+  body {
+    background-color: var(--color-night-950);
+    overflow-x: hidden;
+  }
+}
+
+@keyframes breathe {
+  0%, 100% { transform: scale(1); opacity: 0.85; }
+  50% { transform: scale(1.04); opacity: 1; }
+}
+.animate-breathe {
+  animation: breathe 4s ease-in-out infinite;
+}
+
+@keyframes floatSlow {
+  0%, 100% { transform: translate(0, 0); }
+  50% { transform: translate(2%, -3%); }
+}
+.animate-float-slow {
+  animation: floatSlow 14s ease-in-out infinite;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.001ms !important;
+    transition-duration: 0.001ms !important;
+  }
+}
