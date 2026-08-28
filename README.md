@@ -41,26 +41,6 @@ src/
                   useSessionHistory, useLocalStorage
 ```
 
-## Kurulum ve geliştirme
-
-```bash
-npm install
-npm run dev       # http://localhost:5173
-```
-
-## Üretim derlemesi
-
-```bash
-npm run build
-npm run preview
-```
-
-## Netlify'da yayınlama
-
-1. Klasörü GitHub'da **public** bir repoya yükleyin.
-2. [netlify.com](https://netlify.com) → **Add new site → Import an existing project** ile repoyu bağlayın.
-3. Build ayarları `netlify.toml` ile otomatik algılanır (`npm run build`, publish: `dist`).
-4. Deploy edip verilen linki teslim formunda paylaşın.
 
 ## Kullanılan teknolojiler
 
