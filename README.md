@@ -50,3 +50,7 @@ src/
 - [Framer Motion](https://motion.dev)
 - [lucide-react](https://lucide.dev)
 - Web Audio API + Canvas 2D (canlı ses ve görsel üretimi, harici dosya gerekmez)
+
+
+## 🌐 Canlı Demo  
+https://planorapomodoro.netlify.app/
