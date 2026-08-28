@@ -1,8 +1,67 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
-  <rect width="64" height="64" rx="14" fill="#863BFF"/>
-  <circle cx="32" cy="35" r="18" fill="none" stroke="white" stroke-width="5"/>
-  <rect x="27" y="9" width="10" height="5" rx="2.5" fill="white"/>
-  <line x1="32" y1="35" x2="32" y2="23" stroke="white" stroke-width="5" stroke-linecap="round"/>
-  <line x1="32" y1="35" x2="41" y2="40" stroke="white" stroke-width="5" stroke-linecap="round"/>
-  <circle cx="32" cy="35" r="3" fill="white"/>
+ <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+
+  <defs>
+    <linearGradient id="aurora" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#FF8A3D"/>
+      <stop offset="45%" stop-color="#9B5CFF"/>
+      <stop offset="100%" stop-color="#36B9FF"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Arka plan -->
+  <rect
+    width="64"
+    height="64"
+    rx="16"
+    fill="url(#aurora)"
+  />
+
+  <!-- Kum saati üst çerçevesi -->
+  <path
+    d="M20 15H44"
+    stroke="white"
+    stroke-width="5"
+    stroke-linecap="round"
+  />
+
+  <!-- Kum saati alt çerçevesi -->
+  <path
+    d="M20 49H44"
+    stroke="white"
+    stroke-width="5"
+    stroke-linecap="round"
+  />
+
+  <!-- Kum saati gövdesi -->
+  <path
+    d="M23 17
+       C23 24 27 27 32 32
+       C27 37 23 40 23 47
+       M41 17
+       C41 24 37 27 32 32
+       C37 37 41 40 41 47"
+    fill="none"
+    stroke="white"
+    stroke-width="4"
+    stroke-linecap="round"
+    stroke-linejoin="round"
+  />
+
+  <!-- Kum -->
+  <path
+    d="M28 25
+       C29 27 31 29 32 30
+       C33 29 35 27 36 25
+       Z"
+    fill="white"
+  />
+
+  <path
+    d="M28 39
+       C30 37 31 35 32 34
+       C33 35 34 37 36 39
+       Z"
+    fill="white"
+  />
+
 </svg>
